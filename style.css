@@ -1,0 +1,36 @@
+:root {
+  --white: #F8F4F9;
+  --lavender: #BEA7E5;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#container {
+  width: 300px;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: var(--lavender) 1px dotted;
+  border-radius: 0.3rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: var(--lavender);
+  cursor: pointer;
+  max-width: 100px;
+  max-height: 30px;
+}
