@@ -1,3 +1,2 @@
 let i = i$('Anna', 'Ha')
-
-console.log(i)
+i.greet().setLang('pl').greet(true)
