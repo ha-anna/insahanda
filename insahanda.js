@@ -63,6 +63,21 @@
       this.validate()
 
       return this
+    },
+    displayGreeting: function(selector, formal) {
+      if (!$) {
+        throw 'jQuery not loaded'
+      }
+      if (!selector) {
+        throw 'jQuery selector missing'
+      }
+      let msg
+      if (formal) {
+        msg = this.formalGreeting()
+      } else {
+        msg = this.greeting()
+      }
+      $(selector).text(msg)
     }
   }
 

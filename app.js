@@ -1,2 +1,3 @@
 let i = i$('Anna', 'Ha')
-i.greet().setLang('pl').greet(true)
+
+i.greet().setLang('eng').displayGreeting('#greeting', true)
