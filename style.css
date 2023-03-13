@@ -1,6 +1,7 @@
 :root {
   --bg: #F8F4F9;
   --white: #fafafb;
+  --black: #323232;
   --lavender: #BEA7E5;
   --lavender-dark: #a476f4;
 }
@@ -10,7 +11,10 @@
 }
 
 body {
-  background: var(--bg);
+  background-image: url('/patternpad.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -57,6 +61,13 @@ button:hover {
 }
 
 h1 {
+  font-size: 3em;
+  text-align: right;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
   color: var(--lavender-dark);
   background: var(--white);
   width: 500px;
@@ -64,4 +75,20 @@ h1 {
   text-align: center;
   border: var(--lavender) 1px dotted;
   border-radius: 0.3rem;
+}
+
+header {
+  color: var(--lavender-dark);
+  background: var(--white);
+  width: 500px;
+  padding: 2rem;
+  text-align: center;
+  border: var(--lavender) 1px dotted;
+  border-radius: 0.3rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  color: var(--black);
+  font-size: 0.875em;
 }
