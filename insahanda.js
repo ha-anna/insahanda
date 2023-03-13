@@ -31,7 +31,11 @@
   // prototype holds methods (to save memory space)
   insahanda.prototype = {
     fullName: function() {
-      return `${this.firstName} ${this.lastName}`
+      if (/^[a-zA-Z]+$/.test(this.firstName) && /^[a-zA-Z]+$/.test(this.lastName)) {
+        return `${this.firstName} ${this.lastName}`
+      } else {
+        return `${this.lastName}${this.firstName}`
+      }
     },
     validate: function() {
       if (supportedLangs.indexOf(this.language) === -1) {

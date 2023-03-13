@@ -1,7 +1,10 @@
 $('#login').click(function(){
-  let i = i$('Anna', 'Ha')
+  const firstname = $('#firstname').val()
+  const lastname = $('#lastname').val()
   const lang = $('#lang').val()
   const form = $('#form').val()
   const isTrue = form === 'true'
+
+  const i = i$(firstname, lastname)
   i.greet().setLang(lang).displayGreeting('#greeting', isTrue)
 })
