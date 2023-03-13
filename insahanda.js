@@ -1,6 +1,6 @@
 // mini framework that greets you in different languages (Korean, English, Polish)
 
-(function(global, $) {
+;(function(global, $) {
 
   // 'new' an object
   const insahanda = function(firstName, lastName, language) {
@@ -97,7 +97,7 @@
     self.firstName = firstName || ""
     self.lastName = lastName || ""
     self.language = language || "ko"
-    
+
     self.validate()
   }
 

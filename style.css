@@ -18,7 +18,7 @@ body {
 }
 
 #container {
-  width: 300px;
+  width: 500px;
   padding: 3rem;
   display: flex;
   justify-content: space-evenly;
@@ -28,7 +28,8 @@ body {
   background: var(--white);
 }
 
-#lang {
+#lang,
+#form {
   border: 3px solid var(--lavender);
   border-radius: 0.3rem;
   min-width: 100px;
@@ -54,7 +55,7 @@ button:hover {
 h1 {
   color: var(--lavender-dark);
   background: var(--white);
-  width: 300px;
+  width: 500px;
   padding: 3rem;
   text-align: center;
   border: var(--lavender) 1px dotted;
